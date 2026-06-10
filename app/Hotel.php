@@ -24,7 +24,7 @@ class Hotel extends Model
         'deleted_at',
     ];
 
-    public function rooms()
+    public function hotelRooms()
     {
         return $this->hasMany(Room::class, 'hotel_id', 'id');
     }
